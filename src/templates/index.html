@@ -1,11 +1,14 @@
 {% extends "base.html" %}
-{% block title %}Index{% endblock %}
+{% block title %}Holidays{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
 {% block content %}
-    <h1>Index</h1>
-    <p class="important">
-      Welcome to my awesome homepage.
-    </p>
+<h1>Holidays for India (for testing, will add country selector)</h1>
+<br>
+{% for holiday in holidays %}
+    <ul>
+        <li>{{ holiday.name }} {{ holiday.date.datetime }} {{ holiday.description }}</li>
+    </ul>
+    {% endfor %}
 {% endblock %}

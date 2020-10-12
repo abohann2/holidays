@@ -3,6 +3,7 @@ lib64
 bin/
 include/
 share/
+*.pyc
 *.cfg
 .env
 .vscode/settings.json

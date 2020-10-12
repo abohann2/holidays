@@ -5,3 +5,4 @@ include/
 share/
 *.cfg
 .env
+.vscode/settings.json
